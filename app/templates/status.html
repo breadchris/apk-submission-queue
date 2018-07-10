@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Status{% endblock %}
+
+{% block page_content %}
+<h1>Status of Submission</h1>
+<p>Please wait up to 15 min for submission to run</p>
+<ul class="list-group">
+  <li class="list-group-item">
+      <h5 class="mb-1">{{ status_update.status }}</h5>
+      <small>{{ status_update.time }}</small>
+  </li>
+</ul>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

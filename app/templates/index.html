@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}APK Challenges{% endblock %}
+
+{% block page_content %}
+<h1>Submit an APK to run</h1>
+<p>Max APK size: 3mb</p>
+<p>Limited to 10 submissions an hour.</p>
+<p>Hit up an admin if your exploit is not working here, but works locally.</p>
+<form action="/upload" method="POST" enctype="multipart/form-data">
+    <input type="file" name="file">
+    <input type="submit" value="Upload">
+</form>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}
